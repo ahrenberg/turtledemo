@@ -1,0 +1,11 @@
+turtle tri
+colour tri blue
+pen tri up
+move tri 50
+pen tri down
+left tri 150
+move tri 141
+left tri 120
+move tri 141
+left tri 120
+move tri 141
