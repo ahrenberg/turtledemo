@@ -35,7 +35,7 @@ turtles = {}
 # Applied with decorator below.
 def checkturtle(f):
     """ Maps `KeyError` raised by function `f` to a `TurtleError`.
-    Used as decorator for functions needing to do `turtle[name]`.
+    Used as decorator for functions needing to do `turtles[name]`.
     `KeyError` assumed to be due to non-existing turtle.
     """
     @wraps(f)
@@ -91,7 +91,7 @@ def colour(name, c):
 @checkturtle
 def pen(name,state):
     """ Sets turtle pen state to `state`
-    False - pen down; True - pen up.
+    True - pen down; False - pen up.
     """
     turtles[name].pen = state
 

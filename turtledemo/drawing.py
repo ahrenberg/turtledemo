@@ -49,7 +49,7 @@ output = QTextEdit()
 cmd_input = QLineEdit()
 
 def init():
-    """ Set up GUI and show window. """
+    """ Set up GUI and layout. """
 
     # Feedback area is read only.
     output.setReadOnly(True)
