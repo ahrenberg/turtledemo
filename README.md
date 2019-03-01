@@ -1,6 +1,6 @@
 # turtledemo
 
-Author: Lukas Ahrenberg <lukas@ahrenberg.se>
+Author: Lukas Ahrenberg
 
 Simple turtle-graphics demo written in Python and Qt. Turtle commands are read from file or input interactively. Drawing area always centred at the origin and automatically scaled to show whole scene. Initial drawing area size is 200 by 200 units. Turtles start at origin with pen down, and colour blue.
 
@@ -11,15 +11,15 @@ Simple turtle-graphics demo written in Python and Qt. Turtle commands are read f
 ## Running
 From the project folder the program is started with:
 
-   python turtledemo/main.py 
+   `python turtledemo/main.py`
 
 From the GUI it is possible to submit turtle command lines using the input field. Commands are executed on enter and echoed in the text area above. Error messages are shown in red.
 
 Any command line arguments provided to the program is interpreted as names of text files containing turtle commands, which will be executed first.
 
-   python turtledemo/main.py examples/square.txt
+   `python turtledemo/main.py examples/square.txt`
 
-   python turtledemo/main.py examples/square.txt examples/triangle.txt
+   `python turtledemo/main.py examples/square.txt examples/triangle.txt`
 
 Note that the effect is a concatenation of the files, and that processing will not stop on errors. E.g. two files with identically named turtles may lead to unexpected results.
 
